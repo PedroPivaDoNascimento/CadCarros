@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ListCarros/>
+<ListCarros>
+    <Carro>
+        <id>21312</id>
+        <marca>1231</marca>
+        <modelo>312</modelo>
+        <ano>3123</ano>
+        <preco>31231.0</preco>
+    </Carro>
+</ListCarros>

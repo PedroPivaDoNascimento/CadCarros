@@ -14,6 +14,7 @@ import com.mycompany.gerenciadorarquivoscarros.classes.ListCarros;
 import jakarta.xml.bind.JAXBException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -255,7 +256,7 @@ public class FrCadCarros extends javax.swing.JFrame {
        
         try {
             //Tranformar os arquivos JSON na lista
-            this.listCarros = (ListCarros) JSONService.fromJSON(data);
+            this.listCarros.setListCarros(JSONService.fromJSON(data));
         } catch (JsonProcessingException ex) {
             Logger.getLogger(FrCadCarros.class.getName()).log(Level.SEVERE, null, ex);
         }
